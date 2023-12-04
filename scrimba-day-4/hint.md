@@ -11,3 +11,7 @@ prompt design tips:
     https://huggingface.co/HuggingFaceH4/zephyr-7b-beta
 
 🎁 The HTML and CSS have been done for you, but feel free to make changes if needed.
+
+Tell me a dad joke with santa theme
+
+Tell me a dad joke with dark humour
