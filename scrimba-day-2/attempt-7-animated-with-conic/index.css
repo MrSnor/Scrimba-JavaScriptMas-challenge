@@ -1,0 +1,128 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+  --angle: 115deg;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #222;
+}
+
+.button {
+  font-size: 2rem;
+  background: #222;
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  scale: 1.01;
+}
+
+.button-border {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    to right,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+
+  transition: all 3s ease-in-out;
+}
+
+.button-border:hover {
+  transform: rotate(180deg);
+}
+
+/* try absolute */
+
+.my-container {
+  position: relative;
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+}
+
+.my-button {
+  font-size: 2rem;
+  background: #000;
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  position: relative;
+  
+  margin: 0.4rem;
+}
+
+.my-button-border {
+  position: absolute;
+  top: -100%;
+  left: -30%;
+
+  border-radius: 0.5rem;
+
+  height: 290%;
+  width: 160%;
+
+  background-color: aqua;
+
+  transition: all 1s ease-in-out;
+
+  /* background-image: linear-gradient(
+    to right,
+    var(--grad-color2),
+    var(--grad-color4),
+    var(--grad-color5)
+  ); */
+
+  background-image: conic-gradient(
+    from var(--angle),
+    #eeaf61 ,
+    #fb9062 ,
+    #ee5d6c ,
+    #ce4993 ,
+    #6a0d83
+  );
+
+  /* --border-size: 0.3rem;
+  border: var(--border-size) solid transparent;
+
+  border-image: conic-gradient(
+      from var(--angle),
+      #eeaf61 25%,
+      #fb9062 25%,
+      #ee5d6c 25%,
+      #ce4993 25%
+    )
+    1 stretch; */
+
+  /* background-size: 400% 400%; */
+}
+
+.my-container:hover .my-button-border {
+  transform: rotate(175deg);
+}

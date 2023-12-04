@@ -1,0 +1,81 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: var(--dark-green);
+  background-color: var(--snow);
+  padding-bottom: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: var(--wine-red);
+  color: var(--snow);
+  padding: 2em 3em;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.countdown-display {
+  font-size: 100px;
+  margin: 0;
+}
+
+.progress-bar,
+.progress-bar-holi {
+  padding: 5px;
+  width: 100%;
+  color: white;
+  border-radius: 15px;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.progress-day {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  padding: 2px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* last child of .progress-day */
+.progress-day:last-child {
+  border-width: 0;
+  background-color: #16a34a;
+}
+
+.day-passed {
+  background-color: orange;
+}
+
+.day-today {
+  background-color: cornflowerblue;
+}

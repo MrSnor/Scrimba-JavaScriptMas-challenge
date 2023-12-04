@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .progress-bar {
+        /* background-color: #f2f2f2; */
+        /* border-radius: 5px; */
+        padding: 15px;
+
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+
+        /* height: 2rem; */
+        width: 100%;
+
+        background-color: aqua;
+        border-radius: 15px;
+      }
+
+      .progress {
+        width: 0%;
+        height: 20px;
+        background-color: #4caf50;
+        border-radius: 5px;
+      }
+
+      .progress-day {
+        /* border: solid black; */
+        /* border-width: 0 0.1px; */
+        /* border-width: 0 0 0 0.1px; */
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+        padding: 2px;
+
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 1st child of .progress-day  */
+      .progress-day:first-child {
+        /* border-width: 0 0 0 0.1px; */
+        background-color: cornflowerblue;
+        text-decoration: line-through;
+      }
+
+      /* .progress-day:nth-child(2) {
+        border-width: 0;
+        background-color: rgb(239, 116, 116);
+      } */
+
+      /* last child of .progress-day */
+      .progress-day:last-child {
+        /* border-width: 1.3px; */
+        border-width: 0;
+        background-color: greenyellow;
+      }
+
+      .day-in-between {
+        background-color: rgb(239, 116, 116);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="days-left"></div>
+
+    <div class="progress-bar" style="width: 70%; margin: auto; text-decoration: underline;"></div>
+
+    <script>
+      // const now = new Date();
+      // const givenD = new Date('2023-12-25');
+      // const differenceInDays = Math.floor(
+      //   (givenD - now) / (1000 * 60 * 60 * 24)
+      // );
+
+      // const progressBar = document.getElementById('progress');
+      // progressBar.style.width = `${differenceInDays}%`;
+
+      // const now = new Date();
+      // const givenD = new Date('2023-12-25');
+      // const totalDays = Math.floor(
+      //   (givenD - now) / (1000 * 60 * 60 * 24)
+      // );
+
+      // const progressBar = document.getElementById('progress');
+      // progressBar.style.width = `${totalDays}%`;
+      // progressBar.textContent = `${totalDays} days`;
+    </script>
+
+    <script type="module" src="scrimba-day-1.js"></script>
+  </body>
+</html>
