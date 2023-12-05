@@ -1,0 +1,59 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* > * {
+  outline: 2px solid red;
+}
+
+
+.card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* transition: all 2s ease-in-out; */
+  position: relative;
+}
+
+.card:hover {
+  /* transform: rotateY(180deg); */
+}
+
+.card-inside {
+  padding: 4rem;
+  position: absolute;
+  transition: all 2s ease-in-out;
+  width: 100%;
+
+}
+
+.front{
+  background-color: red;
+  z-index: 10;
+}
+
+.back {
+  background-color: blue;
+  z-index: 5;
+  transform: rotateY(180deg);
+}
+
+.front:hover {
+  transform: rotateY(180deg);
+}
+
+.back:hover {
+  transform: rotateY(0deg);
+}
+
+
+
